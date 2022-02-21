@@ -1,0 +1,89 @@
+.box0 {
+  color: antiquewhite;
+}
+
+
+.container {
+  width: 80%; /*所占宽度*/
+  margin: auto; /*居中*/
+  background-color: aquamarine;
+  /*字体*/
+  font-family: Didot, serif; /*字体名*/
+  font-size: large; /*大小*/
+  font-weight: 900; /*加粗*/
+
+  /*也可直接*/
+  font: 900 large Didot, serif;
+  /* 边框样式 */
+  border-left: 5px blue solid;
+  border-right: 5px red dotted;
+  border-top: 5px pink double;
+  border-bottom: 5px salmon dashed;
+  border-radius: 36px;
+
+  /* 距边框 */
+  padding: 10px;
+  position: relative;
+
+  /*还有更多的属性可使用时查文档*/
+}
+.container button{
+    background-color:rgb(37, 37, 37);
+    color: rgb(228, 228, 0);
+    padding: 5px;
+    border-radius: 36;
+}
+.container button:hover{
+    background-color: brown;
+}
+.container button:active{
+    background-color: red
+}
+.container h1{
+    text-align: center;
+    margin: 0px;
+}
+
+.img{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    color:red;
+}
+
+
+.list li{
+    list-style-image: url(../img/check.png);
+}
+.list a{
+    text-decoration: none;/*文字装饰 */
+    color:aquamarine;
+}
+a:hover{
+    color:aqua;
+}
+/* a:visited{
+    color: brown;
+    看过
+} */
+.clearfix{
+    clear: both;
+}
+.box1{
+    margin: 0px;
+    float: left;
+    height: auto;
+    width: 33.3%;
+    border: 1px solid coral;
+    
+    box-sizing: border-box;
+    font-family: 'Shizuru',cursive;
+}
+/*奇数排odd  偶数排even 也可直接输入数字表示第几排 也可first(貌似只有first-child)*/
+.list2 li:nth-child(even){
+    background-color: aqua;
+}
+.list2 li:first-child{
+    background-color: aquamarine;
+}
+
